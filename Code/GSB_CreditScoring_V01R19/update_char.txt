@@ -1,0 +1,7 @@
+update st_charbin 
+set  char_desc='Neutral Points'
+where char_desc='All Other'
+
+update st_charbin 
+set  char_desc='No Response'
+where char_desc='Missing'

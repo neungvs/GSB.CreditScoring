@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportFICO1" targetNamespace="http://tempuri.org/ReportFICO1.xsd" xmlns:mstns="http://tempuri.org/ReportFICO1.xsd" xmlns="http://tempuri.org/ReportFICO1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportFICO1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportFICO1" msprop:Generator_UserDSName="ReportFICO1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptFICO1" msprop:Generator_TableClassName="dtRptFICO1DataTable" msprop:Generator_TableVarName="tabledtRptFICO1" msprop:Generator_RowChangedName="dtRptFICO1RowChanged" msprop:Generator_TablePropName="dtRptFICO1" msprop:Generator_RowDeletingName="dtRptFICO1RowDeleting" msprop:Generator_RowChangingName="dtRptFICO1RowChanging" msprop:Generator_RowEvHandlerName="dtRptFICO1RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptFICO1RowDeleted" msprop:Generator_RowClassName="dtRptFICO1Row" msprop:Generator_UserTableName="dtRptFICO1" msprop:Generator_RowEvArgName="dtRptFICO1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" msprop:Generator_UserColumnName="SortID" type="xs:string" minOccurs="0" />
+              <xs:element name="ScaledScoreRange" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ScaledScoreRange" msprop:Generator_ColumnVarNameInTable="columnScaledScoreRange" msprop:Generator_ColumnPropNameInTable="ScaledScoreRangeColumn" msprop:Generator_UserColumnName="ScaledScoreRange" type="xs:string" minOccurs="0" />
+              <xs:element name="DevelopmentTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevelopmentTotal" msprop:Generator_ColumnVarNameInTable="columnDevelopmentTotal" msprop:Generator_ColumnPropNameInTable="DevelopmentTotalColumn" msprop:Generator_UserColumnName="DevelopmentTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="DevelopmentTotalPercent" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevelopmentTotalPercent" msprop:Generator_ColumnVarNameInTable="columnDevelopmentTotalPercent" msprop:Generator_ColumnPropNameInTable="DevelopmentTotalPercentColumn" msprop:Generator_UserColumnName="DevelopmentTotalPercent" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodTotal" msprop:Generator_ColumnVarNameInTable="columnPeriodTotal" msprop:Generator_ColumnPropNameInTable="PeriodTotalColumn" msprop:Generator_UserColumnName="PeriodTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodTotalPercent" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodTotalPercent" msprop:Generator_ColumnVarNameInTable="columnPeriodTotalPercent" msprop:Generator_ColumnPropNameInTable="PeriodTotalPercentColumn" msprop:Generator_UserColumnName="PeriodTotalPercent" type="xs:string" minOccurs="0" />
+              <xs:element name="PSIContribution" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PSIContribution" msprop:Generator_ColumnVarNameInTable="columnPSIContribution" msprop:Generator_ColumnPropNameInTable="PSIContributionColumn" msprop:Generator_UserColumnName="PSIContribution" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,103 @@
+﻿*
+{
+    overflow: hidden;
+}
+body
+{
+    margin: 0px;
+    color: #fff;
+    font: 13px/1.3em "Lucida Grande" , Arial, Helvetica; /*background: #f7f7f7 url('../Images/Body/bg-Book.png') no-repeat top center fixed;*/
+    background-image: url('../Images/Login/bg-Book.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+}
+p
+{
+    margin: 0;
+    font-size: 12px;
+    padding-top: 10px;
+}
+img
+{
+    border: 0;
+}
+#wrapper
+{
+    width: 100%;
+}
+#content
+{
+    padding-top: 140px;
+}
+#logo
+{
+    background: url('../Images/Login/logo-gsb.gif') no-repeat;
+    width: 551px;
+    height: 182px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login_form
+{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login_template
+{
+    width: 570px;
+    height: 60px;
+    background: url(../images/Login/login_form.png) no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user_profile
+{
+    height: 10px;
+}
+.username, .password
+{
+    margin-top: 25px;
+    position: absolute;
+    color: #e20888;
+    font-weight: bold;
+    font-size: 19px;
+    width: 160px;
+    border: 0px;
+    background: transparent;
+    height: 26px;
+}
+.username
+{
+    margin-left: 39px;
+}
+.password
+{
+    margin-left: 276px;
+}
+.btnLogin
+{
+    margin-top: 20px;
+    float: right;
+}
+.login_error
+{
+    background: url(../images/Login/login_error.png) no-repeat;
+    color: #e20888;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+.loading
+{
+    background: url(../images/loading.gif) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 238px;
+    position: absolute;
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtRptGSBPFF0004" targetNamespace="http://tempuri.org/dtRptGSBPFF0004.xsd" xmlns:mstns="http://tempuri.org/dtRptGSBPFF0004.xsd" xmlns="http://tempuri.org/dtRptGSBPFF0004.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtRptGSBPFF0004" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtRptGSBPFF0004" msprop:Generator_UserDSName="dtRptGSBPFF0004">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptGSBPFF0004" msprop:Generator_TableClassName="dtRptGSBPFF0004DataTable" msprop:Generator_TableVarName="tabledtRptGSBPFF0004" msprop:Generator_TablePropName="_dtRptGSBPFF0004" msprop:Generator_RowDeletingName="dtRptGSBPFF0004RowDeleting" msprop:Generator_UserTableName="dtRptGSBPFF0004" msprop:Generator_RowChangingName="dtRptGSBPFF0004RowChanging" msprop:Generator_RowEvHandlerName="dtRptGSBPFF0004RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptGSBPFF0004RowDeleted" msprop:Generator_RowEvArgName="dtRptGSBPFF0004RowChangeEvent" msprop:Generator_RowChangedName="dtRptGSBPFF0004RowChanged" msprop:Generator_RowClassName="dtRptGSBPFF0004Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SCRRG" msprop:Generator_ColumnVarNameInTable="columnSCRRG" msprop:Generator_ColumnPropNameInRow="SCRRG" msprop:Generator_ColumnPropNameInTable="SCRRGColumn" msprop:Generator_UserColumnName="SCRRG" type="xs:string" minOccurs="0" />
+              <xs:element name="PAPP" msprop:Generator_ColumnVarNameInTable="columnPAPP" msprop:Generator_ColumnPropNameInRow="PAPP" msprop:Generator_ColumnPropNameInTable="PAPPColumn" msprop:Generator_UserColumnName="PAPP" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PREJ" msprop:Generator_ColumnVarNameInTable="columnPREJ" msprop:Generator_ColumnPropNameInRow="PREJ" msprop:Generator_ColumnPropNameInTable="PREJColumn" msprop:Generator_UserColumnName="PREJ" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACT" msprop:Generator_ColumnVarNameInTable="columnACT" msprop:Generator_ColumnPropNameInRow="ACT" msprop:Generator_ColumnPropNameInTable="ACTColumn" msprop:Generator_UserColumnName="ACT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="appvt" msprop:Generator_ColumnVarNameInTable="columnappvt" msprop:Generator_ColumnPropNameInRow="appvt" msprop:Generator_ColumnPropNameInTable="appvtColumn" msprop:Generator_UserColumnName="appvt" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

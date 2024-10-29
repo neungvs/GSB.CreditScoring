@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A3EC320-0E55-40AE-A5E8-D8860FED81C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSB</RootNamespace>
+    <AssemblyName>GSB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="MattBerseth.WebControls.AJAX">
+      <HintPath>lib\MattBerseth.WebControls.AJAX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WinSCP">
+      <HintPath>.\WinSCP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\Body\bg-Global.jpg" />
+    <Content Include="Images\Body\body_trans.png" />
+    <Content Include="Images\Body\bottom.png" />
+    <Content Include="Images\Body\middle.png" />
+    <Content Include="Images\Body\middle1.png" />
+    <Content Include="Images\Body\sprite.png" />
+    <Content Include="Images\Body\top.png" />
+    <Content Include="Images\cancel.gif" />
+    <Content Include="Images\Footer\contact.png" />
+    <Content Include="Images\Footer\copyright.png" />
+    <Content Include="Images\gsb_logo.jpg" />
+    <Content Include="Images\Header\header.png" />
+    <Content Include="Images\Header\header_hover.png" />
+    <Content Include="Images\Header\iconArrow.png" />
+    <Content Include="Images\Header\logo.png" />
+    <Content Include="Images\Header\system.png" />
+    <Content Include="Images\Icons\add.png" />
+    <Content Include="Images\Icons\cross.png" />
+    <Content Include="Images\Icons\delete.png" />
+    <Content Include="Images\Icons\favicon.ico" />
+    <Content Include="Images\Icons\moveall_left.png" />
+    <Content Include="Images\Icons\moveall_right.png" />
+    <Content Include="Images\Icons\move_down.png" />
+    <Content Include="Images\Icons\move_left.png" />
+    <Content Include="Images\Icons\move_right.png" />
+    <Content Include="Images\Icons\move_up.png" />
+    <Content Include="Images\Login\bg-Book.png" />
+    <Content Include="Images\Login\login_button.png" />
+    <Content Include="Images\Login\login_error.png" />
+    <Content Include="Images\Login\login_form.png" />
+    <Content Include="Images\Login\logo-gsb.gif" />
+    <Content Include="Images\logoGSB.png" />
+    <Content Include="Images\Menu\MenuCenter.png" />
+    <Content Include="Images\Menu\MenuHover.png" />
+    <Content Include="Images\Menu\MenuHover1.png" />
+    <Content Include="Images\Menu\MenuLeft.png" />
+    <Content Include="Images\Menu\MenuRight.png" />
+    <Content Include="Images\Menu\navDown.png" />
+    <Content Include="Images\Menu\navRight.png" />
+    <Content Include="Images\Minus.png" />
+    <Content Include="Images\pen.gif" />
+    <Content Include="Images\Plus.png" />
+    <Content Include="Images\Print.png" />
+    <Content Include="Images\Symbol Add.png" />
+    <Content Include="Images\table_header.png" />
+    <Content Include="LoanSystem\BatchAndLog.aspx" />
+    <Content Include="LoanSystem\ExportLog.aspx" />
+    <Content Include="LoanSystem\LoadCBS.aspx" />
+    <Content Include="LoanSystem\LoadDWH.aspx" />
+    <Content Include="LoanSystem\LoadAScoreMyMo.aspx" />
+    <Content Include="LoanSystem\LoadMymo.aspx" />
+    <Content Include="LoanSystem\OBA.aspx" />
+    <Content Include="LoanSystem\Profile.aspx" />
+    <Content Include="LoanSystem\ExportbySQL.aspx" />
+    <Content Include="LoanSystem\LoadMaster.aspx" />
+    <Content Include="LoanSystem\MasterTable.aspx" />
+    <Content Include="LoanSystem\MenuSearch.aspx" />
+    <Content Include="LoanSystem\UserGroup.aspx" />
+    <Content Include="LoanSystem\UserProfile.aspx" />
+    <Content Include="Loan\ExportExcel.aspx" />
+    <Content Include="Loan\LoanApp.aspx" />
+    <Content Include="Loan\LoanDetailMymo.aspx" />
+    <Content Include="Loan\LoanDetails.aspx" />
+    <Content Include="Loan\LoanExport.aspx" />
+    <Content Include="Loan\ReportLayOut\frmPreviewLoanRpt.aspx" />
+    <Content Include="MasterPage\MenuControl.ascx" />
+    <Content Include="pwd.aspx" />
+    <Content Include="Report\AMR\CreditScoringModelGradeStatus.aspx" />
+    <Content Include="Report\AMR\PerformanceTesting.aspx" />
+    <Content Include="Report\AMR\ReportLayOut\frmPreviewAMRRpt.aspx" />
+    <Content Include="Report\BackEnd\DelinquencyDistributionReport.aspx" />
+    <Content Include="Report\BackEnd\EarlyPerformanceScoreReport.aspx" />
+    <Content Include="Report\BackEnd\GoodOrBadSeparationReport.aspx" />
+    <Content Include="Report\BackEnd\PortfolioChronologyLogs.aspx" />
+    <Content Include="Report\BackEnd\PortfolioGradePerformanceReport.aspx" />
+    <Content Include="Report\BackEnd\PortfolioScorePerformanceReport.aspx" />
+    <Content Include="Report\BackEnd\ReportLayOut\frmPreviewBackRpt.aspx" />
+    <Content Include="Report\BackEnd\VintageAnalysisReport.aspx" />
+    <Content Include="Report\FrontEnd\ApprovalRateReport.aspx" />
+    <Content Include="Report\FrontEnd\CharacteristicAnalysisReport.aspx" />
+    <Content Include="Report\FrontEnd\FinalScoreReport.aspx" />
+    <Content Include="Report\FrontEnd\OverrideRateReport.aspx" />
+    <Content Include="Report\FrontEnd\OverrideReasonReport.aspx" />
+    <Content Include="Report\FrontEnd\PopulationStabilityReport.aspx" />
+    <Content Include="Report\FrontEnd\ReportLayOut\frmPreviewFontRpt.aspx" />
+    <Content Include="Report\Rating\RatingReport_01.aspx" />
+    <Content Include="Report\Rating\RatingReport_02.aspx" />
+    <Content Include="Report\Rating\RatingReport_03.aspx" />
+    <Content Include="Report\Rating\RatingReport_04.aspx" />
+    <Content Include="Report\Rating\RatingReport_05.aspx" />
+    <Content Include="Report\Rating\RatingReport_06.aspx" />
+    <Content Include="Report\Rating\RatingReport_07.aspx" />
+    <Content Include="Report\Rating\RatingReport_08.aspx" />
+    <Content Include="Report\Rating\RatingReport_09.aspx" />
+    <Content Include="Report\Rating\RatingReport_10.aspx" />
+    <Content Include="Report\Rating\RatingReport_11.aspx" />
+    <Content Include="Report\Rating\RatingReport_12.aspx" />
+    <Content Include="Report\Rating\RatingReport_13.aspx" />
+    <Content Include="Report\Rating\RatingReport_14.aspx" />
+    <Content Include="Scripts\apprise-1.5.full.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\datepicker\css\datepicker.css" />
+    <Content Include="Scripts\datepicker\css\layout.css" />
+    <Content Include="Scripts\datepicker\images\custom_b.png" />
+    <Content Include="Scripts\datepicker\images\custom_bl.png" />
+    <Content Include="Scripts\datepicker\images\custom_br.png" />
+    <Content Include="Scripts\datepicker\images\custom_l.png" />
+    <Content Include="Scripts\datepicker\images\custom_r.png" />
+    <Content Include="Scripts\datepicker\images\custom_t.png" />
+    <Content Include="Scripts\datepicker\images\custom_tl.png" />
+    <Content Include="Scripts\datepicker\images\custom_tr.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_b.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_bl.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_br.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_l.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_r.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_t.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_tl.png" />
+    <Content Include="Scripts\datepicker\images\datepicker_tr.png" />
+    <Content Include="Scripts\datepicker\images\field.png" />
+    <Content Include="Scripts\datepicker\js\datepicker.js" />
+    <Content Include="Scripts\datepicker\js\eye.js" />
+    <Content Include="Scripts\datepicker\js\layout.js" />
+    <Content Include="Scripts\datepicker\js\utils.js" />
+    <Content Include="Scripts\jquery-1.3.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.10.offset.datepicker.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.uniform.js" />
+    <Content Include="Scripts\master.js" />
+    <Content Include="Scripts\PrintPreview.js" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignOut.aspx" />
+    <Content Include="Styles\apprise.css" />
+    <Content Include="Styles\ExpandTable.css" />
+    <Content Include="Styles\jquery-ui-1.7.2.custom.css" />
+    <Content Include="Styles\LoanDetailPrint.css" />
+    <Content Include="Styles\LoanDetailScreen.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\master.css" />
+    <Content Include="Styles\Print.css" />
+    <Content Include="Styles\StyleCalender.css" />
+    <Content Include="Styles\Table.css" />
+    <Content Include="Styles\uniform.css" />
+    <Content Include="UpdateDataLog\UpdateDataLog.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\ExportUtility.cs" />
+    <Compile Include="Class\SQLToDataTable.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\BatchAndLog.aspx.cs">
+      <DependentUpon>BatchAndLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\BatchAndLog.aspx.designer.cs">
+      <DependentUpon>BatchAndLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\ExportLog.aspx.cs">
+      <DependentUpon>ExportLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\ExportLog.aspx.designer.cs">
+      <DependentUpon>ExportLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadCBS.aspx.cs">
+      <DependentUpon>LoadCBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\LoadCBS.aspx.designer.cs">
+      <DependentUpon>LoadCBS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadDWH.aspx.cs">
+      <DependentUpon>LoadDWH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\LoadDWH.aspx.designer.cs">
+      <DependentUpon>LoadDWH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadAScoreMyMo.aspx.cs">
+      <DependentUpon>LoadAScoreMyMo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\LoadAScoreMyMo.aspx.designer.cs">
+      <DependentUpon>LoadAScoreMyMo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadMymo.aspx.cs">
+      <DependentUpon>LoadMymo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\LoadMymo.aspx.designer.cs">
+      <DependentUpon>LoadMymo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\MyMoMonthly.cs" />
+    <Compile Include="LoanSystem\OBA.aspx.cs">
+      <DependentUpon>OBA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\OBA.aspx.designer.cs">
+      <DependentUpon>OBA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\ExportbySQL.aspx.cs">
+      <DependentUpon>ExportbySQL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\ExportbySQL.aspx.designer.cs">
+      <DependentUpon>ExportbySQL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadMaster.aspx.cs">
+      <DependentUpon>LoadMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\LoadMaster.aspx.designer.cs">
+      <DependentUpon>LoadMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\MasterTable.aspx.cs">
+      <DependentUpon>MasterTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\MasterTable.aspx.designer.cs">
+      <DependentUpon>MasterTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\MenuSearch.aspx.cs">
+      <DependentUpon>MenuSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\MenuSearch.aspx.designer.cs">
+      <DependentUpon>MenuSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\pkImportData.cs" />
+    <Compile Include="LoanSystem\ScoringApprovalData.cs" />
+    <Compile Include="LoanSystem\UserGroup.aspx.cs">
+      <DependentUpon>UserGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\UserGroup.aspx.designer.cs">
+      <DependentUpon>UserGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoanSystem\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\ExportExcel.aspx.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\ExportExcel.aspx.designer.cs">
+      <DependentUpon>ExportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\LoanApp.aspx.cs">
+      <DependentUpon>LoanApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\LoanApp.aspx.designer.cs">
+      <DependentUpon>LoanApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\LoanDetailMymo.aspx.cs">
+      <DependentUpon>LoanDetailMymo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\LoanDetailMymo.aspx.designer.cs">
+      <DependentUpon>LoanDetailMymo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\LoanDetails.aspx.cs">
+      <DependentUpon>LoanDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\LoanDetails.aspx.designer.cs">
+      <DependentUpon>LoanDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\LoanExport.aspx.cs">
+      <DependentUpon>LoanExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\LoanExport.aspx.designer.cs">
+      <DependentUpon>LoanExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportCharactor.cs">
+      <DependentUpon>LoanDetailAnalysisSubReportCharactor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailSubReportLoanerInfo.cs">
+      <DependentUpon>LoanDetailSubReportLoanerInfo.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailSubReportCreditScoring.cs">
+      <DependentUpon>LoanDetailSubReportCreditScoring.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportCreditScoring.cs">
+      <DependentUpon>LoanDetailAnalysisSubReportCreditScoring.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailAnalysisReport.cs">
+      <DependentUpon>LoanDetailAnalysisReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\frmPreviewLoanRpt.aspx.cs">
+      <DependentUpon>frmPreviewLoanRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\frmPreviewLoanRpt.aspx.designer.cs">
+      <DependentUpon>frmPreviewLoanRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportLoanerInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanDetailAnalysisSubReportLoanerInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Loan\ReportLayOut\LoanDetailDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanDetailDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\CreditScoring.Master.cs">
+      <DependentUpon>CreditScoring.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\CreditScoring.Master.designer.cs">
+      <DependentUpon>CreditScoring.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MenuControl.ascx.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MenuControl.ascx.designer.cs">
+      <DependentUpon>MenuControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LoanSystem\Mymodata.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="pwd.aspx.cs">
+      <DependentUpon>pwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pwd.aspx.designer.cs">
+      <DependentUpon>pwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AMR\CreditScoringModelGradeStatus.aspx.cs">
+      <DependentUpon>CreditScoringModelGradeStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AMR\CreditScoringModelGradeStatus.aspx.designer.cs">
+      <DependentUpon>CreditScoringModelGradeStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AMR\PerformanceTesting.aspx.cs">
+      <DependentUpon>PerformanceTesting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AMR\PerformanceTesting.aspx.designer.cs">
+      <DependentUpon>PerformanceTesting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AMR\ReportLayOut\dtRptAMR001.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptAMR001.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AMR\ReportLayOut\dtRptAMR002.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptAMR002.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AMR\ReportLayOut\frmPreviewAMRRpt.aspx.cs">
+      <DependentUpon>frmPreviewAMRRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AMR\ReportLayOut\frmPreviewAMRRpt.aspx.designer.cs">
+      <DependentUpon>frmPreviewAMRRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\DelinquencyDistributionReport.aspx.cs">
+      <DependentUpon>DelinquencyDistributionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\DelinquencyDistributionReport.aspx.designer.cs">
+      <DependentUpon>DelinquencyDistributionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\EarlyPerformanceScoreReport.aspx.cs">
+      <DependentUpon>EarlyPerformanceScoreReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\EarlyPerformanceScoreReport.aspx.designer.cs">
+      <DependentUpon>EarlyPerformanceScoreReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\GoodOrBadSeparationReport.aspx.cs">
+      <DependentUpon>GoodOrBadSeparationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\GoodOrBadSeparationReport.aspx.designer.cs">
+      <DependentUpon>GoodOrBadSeparationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioChronologyLogs.aspx.cs">
+      <DependentUpon>PortfolioChronologyLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioChronologyLogs.aspx.designer.cs">
+      <DependentUpon>PortfolioChronologyLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioGradePerformanceReport.aspx.cs">
+      <DependentUpon>PortfolioGradePerformanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioGradePerformanceReport.aspx.designer.cs">
+      <DependentUpon>PortfolioGradePerformanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioScorePerformanceReport.aspx.cs">
+      <DependentUpon>PortfolioScorePerformanceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\PortfolioScorePerformanceReport.aspx.designer.cs">
+      <DependentUpon>PortfolioScorePerformanceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0001.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0001.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0002.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0002.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0003.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0003.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0004.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0004.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0005.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0005.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0006.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0006.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0007.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsRptGSBPFB0007.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\frmPreviewBackRpt.aspx.cs">
+      <DependentUpon>frmPreviewBackRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\frmPreviewBackRpt.aspx.designer.cs">
+      <DependentUpon>frmPreviewBackRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0001.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0001.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0002.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0002.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0003 - Copy.cs">
+      <DependentUpon>SCORINGB0003 - Copy.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0003.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0003.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0004.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0004.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0005.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0005.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0006.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0006.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\ReportLayOut\SCORINGB0007.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGB0007.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\VintageAnalysisReport.aspx.cs">
+      <DependentUpon>VintageAnalysisReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\BackEnd\VintageAnalysisReport.aspx.designer.cs">
+      <DependentUpon>VintageAnalysisReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ApprovalRateReport.aspx.cs">
+      <DependentUpon>ApprovalRateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ApprovalRateReport.aspx.designer.cs">
+      <DependentUpon>ApprovalRateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\CharacteristicAnalysisReport.aspx.cs">
+      <DependentUpon>CharacteristicAnalysisReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\CharacteristicAnalysisReport.aspx.designer.cs">
+      <DependentUpon>CharacteristicAnalysisReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\datetime.cs" />
+    <Compile Include="Report\FrontEnd\FinalScoreReport.aspx.cs">
+      <DependentUpon>FinalScoreReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\FinalScoreReport.aspx.designer.cs">
+      <DependentUpon>FinalScoreReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\OverrideRateReport.aspx.cs">
+      <DependentUpon>OverrideRateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\OverrideRateReport.aspx.designer.cs">
+      <DependentUpon>OverrideRateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\OverrideReasonReport.aspx.cs">
+      <DependentUpon>OverrideReasonReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\OverrideReasonReport.aspx.designer.cs">
+      <DependentUpon>OverrideReasonReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\PopulationStabilityReport.aspx.cs">
+      <DependentUpon>PopulationStabilityReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\PopulationStabilityReport.aspx.designer.cs">
+      <DependentUpon>PopulationStabilityReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportFICO5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0001.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0001.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0002.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0002.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0003.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0003.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0004.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0004.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0005.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0005.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0006.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtRptGSBPFF0006.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\frmPreviewFontRpt.aspx.cs">
+      <DependentUpon>frmPreviewFontRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\frmPreviewFontRpt.aspx.designer.cs">
+      <DependentUpon>frmPreviewFontRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\Report16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\Report3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\ReportFICO1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\ReportFICO2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\ReportFICO3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\ReportFICO4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\ReportFICO6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportFICO6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0001.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0001.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0002GN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0002GN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0002GP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0002GP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0002SN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0002SN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0002SP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0002SP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0003.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0003.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0004.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0004.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\FrontEnd\ReportLayOut\SCORINGF0005.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SCORINGF0005.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_01.aspx.cs">
+      <DependentUpon>RatingReport_01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_01.aspx.designer.cs">
+      <DependentUpon>RatingReport_01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_02.aspx.cs">
+      <DependentUpon>RatingReport_02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_02.aspx.designer.cs">
+      <DependentUpon>RatingReport_02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_03.aspx.cs">
+      <DependentUpon>RatingReport_03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_03.aspx.designer.cs">
+      <DependentUpon>RatingReport_03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_04.aspx.cs">
+      <DependentUpon>RatingReport_04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_04.aspx.designer.cs">
+      <DependentUpon>RatingReport_04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_05.aspx.cs">
+      <DependentUpon>RatingReport_05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_05.aspx.designer.cs">
+      <DependentUpon>RatingReport_05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_06.aspx.cs">
+      <DependentUpon>RatingReport_06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_06.aspx.designer.cs">
+      <DependentUpon>RatingReport_06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_07.aspx.cs">
+      <DependentUpon>RatingReport_07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_07.aspx.designer.cs">
+      <DependentUpon>RatingReport_07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_08.aspx.cs">
+      <DependentUpon>RatingReport_08.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_08.aspx.designer.cs">
+      <DependentUpon>RatingReport_08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_09.aspx.cs">
+      <DependentUpon>RatingReport_09.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_09.aspx.designer.cs">
+      <DependentUpon>RatingReport_09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_10.aspx.cs">
+      <DependentUpon>RatingReport_10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_10.aspx.designer.cs">
+      <DependentUpon>RatingReport_10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_11.aspx.cs">
+      <DependentUpon>RatingReport_11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_11.aspx.designer.cs">
+      <DependentUpon>RatingReport_11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_12.aspx.cs">
+      <DependentUpon>RatingReport_12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_12.aspx.designer.cs">
+      <DependentUpon>RatingReport_12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_13.aspx.cs">
+      <DependentUpon>RatingReport_13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_13.aspx.designer.cs">
+      <DependentUpon>RatingReport_13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_14.aspx.cs">
+      <DependentUpon>RatingReport_14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Rating\RatingReport_14.aspx.designer.cs">
+      <DependentUpon>RatingReport_14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignOut.aspx.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignOut.aspx.designer.cs">
+      <DependentUpon>SignOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDataLog\UpdateDataLog.aspx.cs">
+      <DependentUpon>UpdateDataLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateDataLog\UpdateDataLog.aspx.designer.cs">
+      <DependentUpon>UpdateDataLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RetailBlaze\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\CreditScoring.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\Login.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Loan\ReportLayOut\LoanDetailDataSet.xsc">
+      <DependentUpon>LoanDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Loan\ReportLayOut\LoanDetailDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanDetailDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Loan\ReportLayOut\LoanDetailDataSet.xss">
+      <DependentUpon>LoanDetailDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\GSBScoring_Release.pubxml" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\AMR\ReportLayOut\dtRptAMR001.xsc">
+      <DependentUpon>dtRptAMR001.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\AMR\ReportLayOut\dtRptAMR001.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptAMR001.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Report\AMR\ReportLayOut\dtRptAMR001.xss">
+      <DependentUpon>dtRptAMR001.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\AMR\ReportLayOut\dtRptAMR002.xsc">
+      <DependentUpon>dtRptAMR002.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\AMR\ReportLayOut\dtRptAMR002.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptAMR002.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\AMR\ReportLayOut\dtRptAMR002.xss">
+      <DependentUpon>dtRptAMR002.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0001.xsc">
+      <DependentUpon>dsRptGSBPFB0001.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0001.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0001.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0001.xss">
+      <DependentUpon>dsRptGSBPFB0001.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0002.xsc">
+      <DependentUpon>dsRptGSBPFB0002.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0002.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0002.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0002.xss">
+      <DependentUpon>dsRptGSBPFB0002.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0003.xsc">
+      <DependentUpon>dsRptGSBPFB0003.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0003.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0003.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0003.xss">
+      <DependentUpon>dsRptGSBPFB0003.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0004.xsc">
+      <DependentUpon>dsRptGSBPFB0004.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0004.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0004.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0004.xss">
+      <DependentUpon>dsRptGSBPFB0004.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0005.xsc">
+      <DependentUpon>dsRptGSBPFB0005.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0005.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0005.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0005.xss">
+      <DependentUpon>dsRptGSBPFB0005.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0006.xsc">
+      <DependentUpon>dsRptGSBPFB0006.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0006.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0006.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0006.xss">
+      <DependentUpon>dsRptGSBPFB0006.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0007.xsc">
+      <DependentUpon>dsRptGSBPFB0007.xsd</DependentUpon>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0007.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRptGSBPFB0007.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\BackEnd\ReportLayOut\dsRptGSBPFB0007.xss">
+      <DependentUpon>dsRptGSBPFB0007.xsd</DependentUpon>
+    </None>
+    <Content Include="Report\FrontEnd\ReportFICO5.xsc">
+      <DependentUpon>ReportFICO5.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportFICO5.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO5.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportFICO5.xss">
+      <DependentUpon>ReportFICO5.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0001.xsc">
+      <DependentUpon>dtRptGSBPFF0001.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0001.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0001.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0001.xss">
+      <DependentUpon>dtRptGSBPFF0001.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0002.xsc">
+      <DependentUpon>dtRptGSBPFF0002.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0002.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0002.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0002.xss">
+      <DependentUpon>dtRptGSBPFF0002.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0003.xsc">
+      <DependentUpon>dtRptGSBPFF0003.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0003.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0003.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0003.xss">
+      <DependentUpon>dtRptGSBPFF0003.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0004.xsc">
+      <DependentUpon>dtRptGSBPFF0004.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0004.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0004.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0004.xss">
+      <DependentUpon>dtRptGSBPFF0004.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0005.xsc">
+      <DependentUpon>dtRptGSBPFF0005.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0005.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0005.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0005.xss">
+      <DependentUpon>dtRptGSBPFF0005.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0006.xsc">
+      <DependentUpon>dtRptGSBPFF0006.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0006.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtRptGSBPFF0006.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\FrontEnd\ReportLayOut\dtRptGSBPFF0006.xss">
+      <DependentUpon>dtRptGSBPFF0006.xsd</DependentUpon>
+    </None>
+    <Content Include="Web References\RetailBlaze\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO1.xsc">
+      <DependentUpon>ReportFICO1.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\Report16.xsc">
+      <DependentUpon>Report16.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\Report16.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Report16.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\Report16.xss">
+      <DependentUpon>Report16.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\ReportFICO1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO1.xss">
+      <DependentUpon>ReportFICO1.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO2.xsc">
+      <DependentUpon>ReportFICO2.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\ReportFICO2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO2.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO2.xss">
+      <DependentUpon>ReportFICO2.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO3.xsc">
+      <DependentUpon>ReportFICO3.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\ReportFICO3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO3.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO3.xss">
+      <DependentUpon>ReportFICO3.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO4.xsc">
+      <DependentUpon>ReportFICO4.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\ReportFICO4.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO4.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO4.xss">
+      <DependentUpon>ReportFICO4.xsd</DependentUpon>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO6.xsc">
+      <DependentUpon>ReportFICO6.xsd</DependentUpon>
+    </Content>
+    <None Include="Report\FrontEnd\ReportLayOut\ReportFICO6.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportFICO6.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Report\FrontEnd\ReportLayOut\ReportFICO6.xss">
+      <DependentUpon>ReportFICO6.xsd</DependentUpon>
+    </Content>
+    <None Include="Web References\RetailBlaze\RetailServiceImplService.wsdl" />
+    <None Include="Web References\RetailBlaze\RuleService.wsdl" />
+    <None Include="Web References\RetailBlaze\RuleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0001.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0001.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0002.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0002.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0003.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0003.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0004.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0004.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0005.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0005.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0006.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0006.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0007.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0007.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0002SP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0002SP.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0002SN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0002SN.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0002GP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0002GP.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0001.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0001.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0002GN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0002GN.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0003.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0003.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0004.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0004.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0005.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGF0005.cs</LastGenOutput>
+    </Content>
+    <Content Include="Report\FrontEnd\ReportLayOut\SCORINGF0006.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailAnalysisMymoReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportCharactor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailAnalysisSubReportCharactor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailMymoReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailSubReportLoanerInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailSubReportLoanerInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailSubReportCreditScoring.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailSubReportCreditScoring.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportCreditScoring.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailAnalysisSubReportCreditScoring.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailAnalysisReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailAnalysisReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loan\ReportLayOut\LoanDetailAnalysisSubReportLoanerInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LoanDetailAnalysisSubReportLoanerInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Report\BackEnd\ReportLayOut\SCORINGB0003 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCORINGB0003 - Copy.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Report\FrontEnd\ReportLayOut\Report3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Report3.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arsoft.Utility.MSSQL\Arsoft.Utility.MSSQL.csproj">
+      <Project>{0774C8D0-8072-4261-A973-2BAFA4A7B7B0}</Project>
+      <Name>Arsoft.Utility.MSSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arsoft.Utility\Arsoft.Utility.csproj">
+      <Project>{E97BB6E2-8921-416F-95D6-5DE0DA057F62}</Project>
+      <Name>Arsoft.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="PasswordTextBox\PasswordTextBox.csproj">
+      <Project>{9B7266A3-D18B-496C-9815-BD63F9D157AB}</Project>
+      <Name>PasswordTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.205.92:8080/RetailService/RuleService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\RetailBlaze\</RelPath>
+      <UpdateFromURL>http://192.168.205.92:8080/RetailService/RuleService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>GSB_RetailBlaze_RetailServiceImplService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

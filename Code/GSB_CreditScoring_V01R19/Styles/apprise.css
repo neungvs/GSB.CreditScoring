@@ -1,0 +1,198 @@
+﻿.appOverlay
+	{
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background-image: url('../Images/Body/body_trans.png');
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
+	}
+.appriseOuter
+	{
+	z-index:101;
+    position:fixed;
+    width:350px;
+	height:142px;
+	padding:6px;
+	background-image: url('../Images/Body/body_trans.png');
+	
+	top: 35%;
+	bottom: 35%;
+	left: 35%;
+	right: 35%;
+	
+	}
+.appriseInner
+	{
+	color:#333;
+    border:1px solid #bababa;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+#heading, #content
+{
+    width: 348px; 
+}	
+	
+
+#heading 
+{
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:100%;
+	height:38px;
+
+	background-image: -webkit-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -moz-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -o-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -ms-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f9f9f9', EndColorStr='#e9e9e9');
+
+	border-bottom:1px solid #bababa;
+
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	line-height:38px;
+
+	color:#444444;
+	text-indent: 8px;
+}
+
+#content {
+	height:100px;
+	background:#fcfcfc;
+}
+
+#content p 
+{
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	text-align:center;
+	line-height:22px;
+	color:#555555;
+
+	width:100%;
+	float: left;
+
+	margin:19px 0;
+}
+
+
+.pop_button 
+{
+    background-image: url('../Images/Icons/cross.png');
+    width: 30px;
+    height: 32px;
+	float:right;
+	margin:1px 4px 0 0;
+	
+	cursor: hand;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appOpenOuter
+	{
+	z-index:101;
+    position:fixed;
+    width:93%;
+	height:89%;
+	padding:6px;
+	background-image: url('../Images/Body/body_trans.png');
+	
+	top: 4%;
+	left: 3%;
+	
+	}
+.appOpenInner
+	{
+	color:#333;
+    border:1px solid #bababa;
+	}
+	
+#appOpenHead, #appOpenContent
+{
+    width: 100%;
+}	
+#appOpenHead 
+{
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:100%;
+	height:38px;
+
+	background-image: -webkit-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -moz-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -o-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: -ms-linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	background-image: linear-gradient(top, rgb(249, 249, 249), rgb(233, 233, 233));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f9f9f9', EndColorStr='#e9e9e9');
+
+	border-bottom:1px solid #bababa;
+
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	line-height:38px;
+
+	color:#444444;
+	text-indent: 8px;
+}
+
+#appOpenContent {
+	position: fixed;
+	width: 93%;
+	height: 82%;
+	margin-left:-1px;
+}
+
+.app-iframe
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    vertical-align: top;
+}

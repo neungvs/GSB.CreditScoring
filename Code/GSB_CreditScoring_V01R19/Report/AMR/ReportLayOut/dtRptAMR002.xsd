@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtRptAMR002" targetNamespace="http://tempuri.org/dtRptAMR002.xsd" xmlns:mstns="http://tempuri.org/dtRptAMR002.xsd" xmlns="http://tempuri.org/dtRptAMR002.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtRptAMR002" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtRptAMR002" msprop:Generator_UserDSName="dtRptAMR002">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptAMR002" msprop:Generator_TableClassName="dtRptAMR002DataTable" msprop:Generator_TableVarName="tabledtRptAMR002" msprop:Generator_TablePropName="_dtRptAMR002" msprop:Generator_RowDeletingName="dtRptAMR002RowDeleting" msprop:Generator_RowChangingName="dtRptAMR002RowChanging" msprop:Generator_RowEvHandlerName="dtRptAMR002RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptAMR002RowDeleted" msprop:Generator_UserTableName="dtRptAMR002" msprop:Generator_RowChangedName="dtRptAMR002RowChanged" msprop:Generator_RowEvArgName="dtRptAMR002RowChangeEvent" msprop:Generator_RowClassName="dtRptAMR002Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScoreBand" msprop:Generator_ColumnVarNameInTable="columnScoreBand" msprop:Generator_ColumnPropNameInRow="ScoreBand" msprop:Generator_ColumnPropNameInTable="ScoreBandColumn" msprop:Generator_UserColumnName="ScoreBand" type="xs:string" minOccurs="0" />
+              <xs:element name="DefaultCount" msprop:Generator_ColumnVarNameInTable="columnDefaultCount" msprop:Generator_ColumnPropNameInRow="DefaultCount" msprop:Generator_ColumnPropNameInTable="DefaultCountColumn" msprop:Generator_UserColumnName="DefaultCount" type="xs:string" minOccurs="0" />
+              <xs:element name="NonDefaultCount" msprop:Generator_ColumnVarNameInTable="columnNonDefaultCount" msprop:Generator_ColumnPropNameInRow="NonDefaultCount" msprop:Generator_ColumnPropNameInTable="NonDefaultCountColumn" msprop:Generator_UserColumnName="NonDefaultCount" type="xs:string" minOccurs="0" />
+              <xs:element name="DefaultCapture" msprop:Generator_ColumnVarNameInTable="columnDefaultCapture" msprop:Generator_ColumnPropNameInRow="DefaultCapture" msprop:Generator_ColumnPropNameInTable="DefaultCaptureColumn" msprop:Generator_UserColumnName="DefaultCapture" type="xs:string" minOccurs="0" />
+              <xs:element name="NonDefaultCapture" msprop:Generator_ColumnVarNameInTable="columnNonDefaultCapture" msprop:Generator_ColumnPropNameInRow="NonDefaultCapture" msprop:Generator_ColumnPropNameInTable="NonDefaultCaptureColumn" msprop:Generator_UserColumnName="NonDefaultCapture" type="xs:string" minOccurs="0" />
+              <xs:element name="CumCapDefault" msprop:Generator_ColumnVarNameInTable="columnCumCapDefault" msprop:Generator_ColumnPropNameInRow="CumCapDefault" msprop:Generator_ColumnPropNameInTable="CumCapDefaultColumn" msprop:Generator_UserColumnName="CumCapDefault" type="xs:string" minOccurs="0" />
+              <xs:element name="CumCapNonDefault" msprop:Generator_ColumnVarNameInTable="columnCumCapNonDefault" msprop:Generator_ColumnPropNameInRow="CumCapNonDefault" msprop:Generator_ColumnPropNameInTable="CumCapNonDefaultColumn" msprop:Generator_UserColumnName="CumCapNonDefault" type="xs:string" minOccurs="0" />
+              <xs:element name="KS" msprop:Generator_ColumnVarNameInTable="columnKS" msprop:Generator_ColumnPropNameInRow="KS" msprop:Generator_ColumnPropNameInTable="KSColumn" msprop:Generator_UserColumnName="KS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

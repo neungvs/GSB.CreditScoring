@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptGSBPFB0006" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptGSBPFB0006" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRptGSBPFB0006" msprop:Generator_UserDSName="dsRptGSBPFB0006">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RPT_PortfolioGradePerf" msprop:Generator_TableClassName="RPT_PortfolioGradePerfDataTable" msprop:Generator_TableVarName="tableRPT_PortfolioGradePerf" msprop:Generator_TablePropName="RPT_PortfolioGradePerf" msprop:Generator_RowDeletingName="RPT_PortfolioGradePerfRowDeleting" msprop:Generator_UserTableName="RPT_PortfolioGradePerf" msprop:Generator_RowChangingName="RPT_PortfolioGradePerfRowChanging" msprop:Generator_RowEvHandlerName="RPT_PortfolioGradePerfRowChangeEventHandler" msprop:Generator_RowDeletedName="RPT_PortfolioGradePerfRowDeleted" msprop:Generator_RowEvArgName="RPT_PortfolioGradePerfRowChangeEvent" msprop:Generator_RowChangedName="RPT_PortfolioGradePerfRowChanged" msprop:Generator_RowClassName="RPT_PortfolioGradePerfRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="scrdif" msprop:Generator_ColumnVarNameInTable="columnscrdif" msprop:Generator_ColumnPropNameInRow="scrdif" msprop:Generator_ColumnPropNameInTable="scrdifColumn" msprop:Generator_UserColumnName="scrdif" type="xs:string" minOccurs="0" />
+              <xs:element name="totcnt" msprop:Generator_ColumnVarNameInTable="columntotcnt" msprop:Generator_ColumnPropNameInRow="totcnt" msprop:Generator_ColumnPropNameInTable="totcntColumn" msprop:Generator_UserColumnName="totcnt" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTAMT" msprop:Generator_ColumnVarNameInTable="columnTOTAMT" msprop:Generator_ColumnPropNameInRow="TOTAMT" msprop:Generator_ColumnPropNameInTable="TOTAMTColumn" msprop:Generator_UserColumnName="TOTAMT" type="xs:string" minOccurs="0" />
+              <xs:element name="NPLCount" msprop:Generator_ColumnVarNameInTable="columnNPLCount" msprop:Generator_ColumnPropNameInRow="NPLCount" msprop:Generator_ColumnPropNameInTable="NPLCountColumn" msprop:Generator_UserColumnName="NPLCount" type="xs:string" minOccurs="0" />
+              <xs:element name="PNPL" msprop:Generator_ColumnVarNameInTable="columnPNPL" msprop:Generator_ColumnPropNameInRow="PNPL" msprop:Generator_ColumnPropNameInTable="PNPLColumn" msprop:Generator_UserColumnName="PNPL" type="xs:string" minOccurs="0" />
+              <xs:element name="BDAMT" msprop:Generator_ColumnVarNameInTable="columnBDAMT" msprop:Generator_ColumnPropNameInRow="BDAMT" msprop:Generator_ColumnPropNameInTable="BDAMTColumn" msprop:Generator_UserColumnName="BDAMT" type="xs:string" minOccurs="0" />
+              <xs:element name="PAMT" msprop:Generator_ColumnVarNameInTable="columnPAMT" msprop:Generator_ColumnPropNameInRow="PAMT" msprop:Generator_ColumnPropNameInTable="PAMTColumn" msprop:Generator_UserColumnName="PAMT" type="xs:string" minOccurs="0" />
+              <xs:element name="cumulativeamount" msprop:Generator_ColumnVarNameInTable="columncumulativeamount" msprop:Generator_ColumnPropNameInRow="cumulativeamount" msprop:Generator_ColumnPropNameInTable="cumulativeamountColumn" msprop:Generator_UserColumnName="cumulativeamount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,268 @@
+﻿table.Search, table.Result, table.Result2
+{
+    width: 954px;
+    border: 1px solid #e2bbd2;
+    font: normal 12px/140% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+
+.Search th
+{
+    height: 36px;
+    background: url('../Images/table_header.png') repeat-x;
+    text-align: left;
+    vertical-align: middle;
+    text-indent: 10px;
+    border: 1px solid #e2bbd2;
+}
+
+.Search tr
+{
+    height: 36px;
+    border: 1px solid #e2bbd2;
+    vertical-align: middle;
+}
+
+.Search td
+{
+    border: 1px solid #e2bbd2;
+    
+}
+
+.Search .subject
+{
+    width: 230px;
+    background-color: #f5e8ef;
+    text-indent: 40px;
+    font-weight: bold;
+}
+
+.Search .detail
+{
+    padding-left: 8px;
+    background-color: #f7ebf2;
+    vertical-align: middle;
+}
+
+.Search .action
+{
+    height: 40px;
+    padding-left: 239px;
+    background-color: #f9f0f5;
+}
+
+
+
+
+
+
+
+
+table.Result
+{
+    margin-top: 10px;
+}
+
+.Result .HeaderRow, .Result2 .HeaderRow
+{
+    height: 36px;
+    background: url('../Images/table_header.png') repeat-x;
+    text-align: left;
+    font-weight: bold;
+    vertical-align: middle;
+    text-indent: 10px;
+    border: 1px solid #e2bbd2;
+}
+
+.Result .TableRow, .Result2 .TableRow
+{
+    padding: 10px;
+    border: 1px solid #e2bbd2;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+table.GridView
+{
+    width: 100%;
+    border: 1px solid #e2bbd2;
+    font: normal 12px/80% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+
+.GridView th
+{
+    height: 31px;
+    background: url('../Images/table_header.png') repeat-x;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e2bbd2;
+}
+
+.GridView tr
+{
+    height: 30px;
+    border: 1px solid #e2bbd2;
+    vertical-align: middle;
+}
+
+.GridView td
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid #e2bbd2;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+table.ExpandTable
+{
+    margin-left: 29px;
+    width: 905px;
+    font: normal 11px/140% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+
+.ExpandTable tr
+{
+    height: 34px;
+    background: url('../Images/table_header.png') repeat-x;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e2bbd2;
+}
+
+.ExpandTable td
+{
+    border: 1px solid #e2bbd2;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+
+
+
+/* Expand Button */
+.Expand
+{
+    margin-top: -1px;
+    cursor: pointer;
+    cursor: hand;
+    height: 30px;
+    border: 1px solid #e2bbd2;
+    border-right: none;
+    background-image: url('../images/table_header.png');
+    background-repeat: repeat-x;
+}
+.Expand input
+{
+    padding-top: 7px;
+    padding-left: 6px;
+}
+
+
+table.GridViewApp td
+{
+    cursor: hand;
+    cursor: pointer;
+    height: 33px;
+    padding: 6px 4px 6px 4px;
+    border: 1px solid #e2bbd2;
+    border-top: none;
+    font: normal 11px/140% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+table.GridViewApp .small
+{
+     font: normal 10px "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+
+
+
+table.GridViewCIF
+{
+    width: 100%;
+    font: normal 11px/140% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+}
+
+.GridViewCIF th
+{
+    height: 24px;
+    border: 1px solid #e2bbd2;
+    border-top: none;
+    background: url('../Images/table_header.png') repeat-x;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.GridViewCIF tr
+{
+    height: 28px;
+    border: 1px solid #e2bbd2;
+    border-top: none;
+    vertical-align: middle;
+}
+
+.GridViewCIF td
+{
+    border: 1px solid #e2bbd2;
+    padding-left: 6px;
+    padding-right: 6px;
+    vertical-align: middle;
+}
+
+.noDataCss
+{
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+}
+
+
+/* Css for Export */
+.StepCss
+{
+    height: 40px;
+    background-color: #f9f0f5;
+}
+.export_box
+{
+    width: 420px;
+    padding: 10px;
+    background-color: #f5e8ef;
+}
+.export_opt
+{
+    width: 40px;
+    background-color: #f7ebf2;
+    text-align: center;
+    vertical-align: middle;
+}
+.txtExport
+{
+    border: 1px solid #e2bbd2;
+    color: #d32d8e;
+    background-color: #fdf6fa;
+}
+
+.RatingRpt tr
+{
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #e2bbd2;
+}
+
+.RatingRpt td
+{
+    border: 1px solid #e2bbd2;
+    vertical-align: middle;
+    font-weight: bold;
+}

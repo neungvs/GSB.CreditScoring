@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptGSBPFB0002" targetNamespace="http://tempuri.org/dsRptGSBPFB0002.xsd" xmlns:mstns="http://tempuri.org/dsRptGSBPFB0002.xsd" xmlns="http://tempuri.org/dsRptGSBPFB0002.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="GSB_PORTFOLIO_Connection" IsAppSettingsProperty="true" Modifier="Assembly" Name="GSB_PORTFOLIO_Connection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.GSB_PORTFOLIO_Connection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptGSBPFB0002" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRptGSBPFB0002" msprop:Generator_UserDSName="dsRptGSBPFB0002">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RPT_EARLY_PERFORMANCE" msprop:Generator_UserTableName="RPT_EARLY_PERFORMANCE" msprop:Generator_RowEvArgName="RPT_EARLY_PERFORMANCERowChangeEvent" msprop:Generator_TableVarName="tableRPT_EARLY_PERFORMANCE" msprop:Generator_TablePropName="RPT_EARLY_PERFORMANCE" msprop:Generator_RowDeletingName="RPT_EARLY_PERFORMANCERowDeleting" msprop:Generator_RowChangingName="RPT_EARLY_PERFORMANCERowChanging" msprop:Generator_RowDeletedName="RPT_EARLY_PERFORMANCERowDeleted" msprop:Generator_RowEvHandlerName="RPT_EARLY_PERFORMANCERowChangeEventHandler" msprop:Generator_TableClassName="RPT_EARLY_PERFORMANCEDataTable" msprop:Generator_RowChangedName="RPT_EARLY_PERFORMANCERowChanged" msprop:Generator_RowClassName="RPT_EARLY_PERFORMANCERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" type="xs:string" minOccurs="0" />
+              <xs:element name="dt3mBM1" msprop:Generator_ColumnVarNameInTable="columndt3mBM1" msprop:Generator_ColumnPropNameInRow="dt3mBM1" msprop:Generator_ColumnPropNameInTable="dt3mBM1Column" msprop:Generator_UserColumnName="dt3mBM1" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mBM1" msprop:Generator_ColumnVarNameInTable="columndt12mBM1" msprop:Generator_ColumnPropNameInRow="dt12mBM1" msprop:Generator_ColumnPropNameInTable="dt12mBM1Column" msprop:Generator_UserColumnName="dt12mBM1" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mygBM1" msprop:Generator_ColumnVarNameInTable="columndt12mygBM1" msprop:Generator_ColumnPropNameInRow="dt12mygBM1" msprop:Generator_ColumnPropNameInTable="dt12mygBM1Column" msprop:Generator_UserColumnName="dt12mygBM1" type="xs:string" minOccurs="0" />
+              <xs:element name="dt3mBM2" msprop:Generator_ColumnVarNameInTable="columndt3mBM2" msprop:Generator_ColumnPropNameInRow="dt3mBM2" msprop:Generator_ColumnPropNameInTable="dt3mBM2Column" msprop:Generator_UserColumnName="dt3mBM2" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mBM2" msprop:Generator_ColumnVarNameInTable="columndt12mBM2" msprop:Generator_ColumnPropNameInRow="dt12mBM2" msprop:Generator_ColumnPropNameInTable="dt12mBM2Column" msprop:Generator_UserColumnName="dt12mBM2" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mygBM2" msprop:Generator_ColumnVarNameInTable="columndt12mygBM2" msprop:Generator_ColumnPropNameInRow="dt12mygBM2" msprop:Generator_ColumnPropNameInTable="dt12mygBM2Column" msprop:Generator_UserColumnName="dt12mygBM2" type="xs:string" minOccurs="0" />
+              <xs:element name="dt3mBM3" msprop:Generator_ColumnVarNameInTable="columndt3mBM3" msprop:Generator_ColumnPropNameInRow="dt3mBM3" msprop:Generator_ColumnPropNameInTable="dt3mBM3Column" msprop:Generator_UserColumnName="dt3mBM3" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mBM3" msprop:Generator_ColumnVarNameInTable="columndt12mBM3" msprop:Generator_ColumnPropNameInRow="dt12mBM3" msprop:Generator_ColumnPropNameInTable="dt12mBM3Column" msprop:Generator_UserColumnName="dt12mBM3" type="xs:string" minOccurs="0" />
+              <xs:element name="dt12mygBM3" msprop:Generator_ColumnVarNameInTable="columndt12mygBM3" msprop:Generator_ColumnPropNameInRow="dt12mygBM3" msprop:Generator_ColumnPropNameInTable="dt12mygBM3Column" msprop:Generator_UserColumnName="dt12mygBM3" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD1p_3M_Y" msprop:Generator_ColumnVarNameInTable="columnDPD1p_3M_Y" msprop:Generator_ColumnPropNameInRow="DPD1p_3M_Y" msprop:Generator_ColumnPropNameInTable="DPD1p_3M_YColumn" msprop:Generator_UserColumnName="DPD1p_3M_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD1p_12M_Y" msprop:Generator_ColumnVarNameInTable="columnDPD1p_12M_Y" msprop:Generator_ColumnPropNameInRow="DPD1p_12M_Y" msprop:Generator_ColumnPropNameInTable="DPD1p_12M_YColumn" msprop:Generator_UserColumnName="DPD1p_12M_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD1p_12YG_Y" msprop:Generator_ColumnVarNameInTable="columnDPD1p_12YG_Y" msprop:Generator_ColumnPropNameInRow="DPD1p_12YG_Y" msprop:Generator_ColumnPropNameInTable="DPD1p_12YG_YColumn" msprop:Generator_UserColumnName="DPD1p_12YG_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD60p_3M_Y" msprop:Generator_ColumnVarNameInTable="columnDPD60p_3M_Y" msprop:Generator_ColumnPropNameInRow="DPD60p_3M_Y" msprop:Generator_ColumnPropNameInTable="DPD60p_3M_YColumn" msprop:Generator_UserColumnName="DPD60p_3M_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD60p_12M_Y" msprop:Generator_ColumnVarNameInTable="columnDPD60p_12M_Y" msprop:Generator_ColumnPropNameInRow="DPD60p_12M_Y" msprop:Generator_ColumnPropNameInTable="DPD60p_12M_YColumn" msprop:Generator_UserColumnName="DPD60p_12M_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="DPD60p_12YG_Y" msprop:Generator_ColumnVarNameInTable="columnDPD60p_12YG_Y" msprop:Generator_ColumnPropNameInRow="DPD60p_12YG_Y" msprop:Generator_ColumnPropNameInTable="DPD60p_12YG_YColumn" msprop:Generator_UserColumnName="DPD60p_12YG_Y" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

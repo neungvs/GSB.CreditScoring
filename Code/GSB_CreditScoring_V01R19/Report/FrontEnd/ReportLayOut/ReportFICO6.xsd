@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportFICO6" targetNamespace="http://tempuri.org/ReportFICO6.xsd" xmlns:mstns="http://tempuri.org/ReportFICO6.xsd" xmlns="http://tempuri.org/ReportFICO6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportFICO6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportFICO6" msprop:Generator_UserDSName="ReportFICO6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptFICO6" msprop:Generator_TableClassName="dtRptFICO6DataTable" msprop:Generator_TableVarName="tabledtRptFICO6" msprop:Generator_RowChangedName="dtRptFICO6RowChanged" msprop:Generator_TablePropName="dtRptFICO6" msprop:Generator_RowDeletingName="dtRptFICO6RowDeleting" msprop:Generator_RowChangingName="dtRptFICO6RowChanging" msprop:Generator_RowEvHandlerName="dtRptFICO6RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptFICO6RowDeleted" msprop:Generator_RowClassName="dtRptFICO6Row" msprop:Generator_UserTableName="dtRptFICO6" msprop:Generator_RowEvArgName="dtRptFICO6RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" msprop:Generator_UserColumnName="SortID" type="xs:string" minOccurs="0" />
+              <xs:element name="MinScoreDisplay" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MinScoreDisplay" msprop:Generator_ColumnVarNameInTable="columnMinScoreDisplay" msprop:Generator_ColumnPropNameInTable="MinScoreDisplayColumn" msprop:Generator_UserColumnName="MinScoreDisplay" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxScoreDisplay" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="MaxScoreDisplay" msprop:Generator_ColumnVarNameInTable="columnMaxScoreDisplay" msprop:Generator_ColumnPropNameInTable="MaxScoreDisplayColumn" msprop:Generator_UserColumnName="MaxScoreDisplay" type="xs:string" minOccurs="0" />
+              <xs:element name="Goods" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Goods" msprop:Generator_ColumnVarNameInTable="columnGoods" msprop:Generator_ColumnPropNameInTable="GoodsColumn" msprop:Generator_UserColumnName="Goods" type="xs:string" minOccurs="0" />
+              <xs:element name="Bads" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Bads" msprop:Generator_ColumnVarNameInTable="columnBads" msprop:Generator_ColumnPropNameInTable="BadsColumn" msprop:Generator_UserColumnName="Bads" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="PercentGoods" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PercentGoods" msprop:Generator_ColumnVarNameInTable="columnPercentGoods" msprop:Generator_ColumnPropNameInTable="PercentGoodsColumn" msprop:Generator_UserColumnName="PercentGoods" type="xs:string" minOccurs="0" />
+              <xs:element name="PercentBads" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PercentBads" msprop:Generator_ColumnVarNameInTable="columnPercentBads" msprop:Generator_ColumnPropNameInTable="PercentBadsColumn" msprop:Generator_UserColumnName="PercentBads" type="xs:string" minOccurs="0" />
+              <xs:element name="PercentTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PercentTotal" msprop:Generator_ColumnVarNameInTable="columnPercentTotal" msprop:Generator_ColumnPropNameInTable="PercentTotalColumn" msprop:Generator_UserColumnName="PercentTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="AccumPercentGoods" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="AccumPercentGoods" msprop:Generator_ColumnVarNameInTable="columnAccumPercentGoods" msprop:Generator_ColumnPropNameInTable="AccumPercentGoodsColumn" msprop:Generator_UserColumnName="AccumPercentGoods" type="xs:string" minOccurs="0" />
+              <xs:element name="AccumPercentBads" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="AccumPercentBads" msprop:Generator_ColumnVarNameInTable="columnAccumPercentBads" msprop:Generator_ColumnPropNameInTable="AccumPercentBadsColumn" msprop:Generator_UserColumnName="AccumPercentBads" type="xs:string" minOccurs="0" />
+              <xs:element name="KSStatistic" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="KSStatistic" msprop:Generator_ColumnVarNameInTable="columnKSStatistic" msprop:Generator_ColumnPropNameInTable="KSStatisticColumn" msprop:Generator_UserColumnName="KSStatistic" type="xs:string" minOccurs="0" />
+              <xs:element name="Gini" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Gini" msprop:Generator_ColumnVarNameInTable="columnGini" msprop:Generator_ColumnPropNameInTable="GiniColumn" msprop:Generator_UserColumnName="Gini" type="xs:string" minOccurs="0" />
+              <xs:element name="BadRate" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="BadRate" msprop:Generator_ColumnVarNameInTable="columnBadRate" msprop:Generator_ColumnPropNameInTable="BadRateColumn" msprop:Generator_UserColumnName="BadRate" type="xs:string" minOccurs="0" />
+              <xs:element name="AccumBadRate" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="AccumBadRate" msprop:Generator_ColumnVarNameInTable="columnAccumBadRate" msprop:Generator_ColumnPropNameInTable="AccumBadRateColumn" msprop:Generator_UserColumnName="AccumBadRate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

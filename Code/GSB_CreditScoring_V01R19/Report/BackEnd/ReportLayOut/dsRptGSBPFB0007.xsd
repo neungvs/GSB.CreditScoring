@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptGSBPFB0007" targetNamespace="http://tempuri.org/dsLogChonoRpt.xsd" xmlns:mstns="http://tempuri.org/dsLogChonoRpt.xsd" xmlns="http://tempuri.org/dsLogChonoRpt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptGSBPFB0007" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRptGSBPFB0007" msprop:Generator_UserDSName="dsRptGSBPFB0007">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RPT_Chronology_Log" msprop:Generator_UserTableName="RPT_Chronology_Log" msprop:Generator_RowEvArgName="RPT_Chronology_LogRowChangeEvent" msprop:Generator_TableVarName="tableRPT_Chronology_Log" msprop:Generator_TablePropName="RPT_Chronology_Log" msprop:Generator_RowDeletingName="RPT_Chronology_LogRowDeleting" msprop:Generator_RowChangingName="RPT_Chronology_LogRowChanging" msprop:Generator_RowDeletedName="RPT_Chronology_LogRowDeleted" msprop:Generator_TableClassName="RPT_Chronology_LogDataTable" msprop:Generator_RowChangedName="RPT_Chronology_LogRowChanged" msprop:Generator_RowEvHandlerName="RPT_Chronology_LogRowChangeEventHandler" msprop:Generator_RowClassName="RPT_Chronology_LogRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OID" msprop:Generator_ColumnVarNameInTable="columnOID" msprop:Generator_ColumnPropNameInRow="OID" msprop:Generator_ColumnPropNameInTable="OIDColumn" msprop:Generator_UserColumnName="OID" type="xs:string" minOccurs="0" />
+              <xs:element name="DTM" msprop:Generator_ColumnVarNameInTable="columnDTM" msprop:Generator_ColumnPropNameInRow="DTM" msprop:Generator_ColumnPropNameInTable="DTMColumn" msprop:Generator_UserColumnName="DTM" type="xs:string" minOccurs="0" />
+              <xs:element name="LTYPE" msprop:Generator_ColumnVarNameInTable="columnLTYPE" msprop:Generator_ColumnPropNameInRow="LTYPE" msprop:Generator_ColumnPropNameInTable="LTYPEColumn" msprop:Generator_UserColumnName="LTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="LSTYPE" msprop:Generator_ColumnVarNameInTable="columnLSTYPE" msprop:Generator_ColumnPropNameInRow="LSTYPE" msprop:Generator_ColumnPropNameInTable="LSTYPEColumn" msprop:Generator_UserColumnName="LSTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="MODEL" msprop:Generator_ColumnVarNameInTable="columnMODEL" msprop:Generator_ColumnPropNameInRow="MODEL" msprop:Generator_ColumnPropNameInTable="MODELColumn" msprop:Generator_UserColumnName="MODEL" type="xs:string" minOccurs="0" />
+              <xs:element name="LMKT" msprop:Generator_ColumnVarNameInTable="columnLMKT" msprop:Generator_ColumnPropNameInRow="LMKT" msprop:Generator_ColumnPropNameInTable="LMKTColumn" msprop:Generator_UserColumnName="LMKT" type="xs:string" minOccurs="0" />
+              <xs:element name="MES" msprop:Generator_ColumnVarNameInTable="columnMES" msprop:Generator_ColumnPropNameInRow="MES" msprop:Generator_ColumnPropNameInTable="MESColumn" msprop:Generator_UserColumnName="MES" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="OID">
+      <xs:selector xpath=".//mstns:RPT_Chronology_Log" />
+      <xs:field xpath="mstns:OID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

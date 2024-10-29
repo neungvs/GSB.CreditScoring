@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://endpoint.fico.com/" targetNamespace="http://endpoint.fico.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://10.22.50.100:8080/RetailService/RuleService?xsd=1" namespace="http://endpoint.fico.com/" />
+    </xsd:schema>
+  </types>
+  <message name="getRetailScoringDecision">
+    <part name="parameters" element="tns:getRetailScoringDecision" />
+  </message>
+  <message name="getRetailScoringDecisionResponse">
+    <part name="parameters" element="tns:getRetailScoringDecisionResponse" />
+  </message>
+  <portType name="RetailService">
+    <operation name="getRetailScoringDecision">
+      <input xmlns:ns1="http://www.w3.org/2007/05/addressing/metadata" ns1:Action="http://endpoint.fico.com/RetailService/getRetailScoringDecisionRequest" message="tns:getRetailScoringDecision" />
+      <output xmlns:ns2="http://www.w3.org/2007/05/addressing/metadata" ns2:Action="http://endpoint.fico.com/RetailService/getRetailScoringDecisionResponse" message="tns:getRetailScoringDecisionResponse" />
+    </operation>
+  </portType>
+</definitions>

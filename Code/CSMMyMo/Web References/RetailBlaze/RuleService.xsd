@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://endpoint.fico.com/" targetNamespace="http://endpoint.fico.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getRetailScoringDecision" type="tns:getRetailScoringDecision" />
+  <xs:element name="getRetailScoringDecisionResponse" type="tns:getRetailScoringDecisionResponse" />
+  <xs:complexType name="getRetailScoringDecision">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRetailScoringDecisionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CreditScoring.master.cs"
+    Inherits="GSB.MasterPage.CreditScoring" %>
+
+<%@ Register Src="MenuControl.ascx" TagPrefix="uc" TagName="MenuControl" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+<%--    <title>ธนาคารออมสิน | ระบบงานบันทึกข้อมูลลูกค้าสินเชื่อ</title>--%>
+    <title>ระบบติดตามประสิทธิภาพ Scoring และ Rating สินเชื่อธุรกิจ</title>
+    <link rel="shortcut icon" href="<%=Page.ResolveUrl("~/")%>images/icons/favicon.ico" />
+    <link rel="stylesheet" media="screen" href="<%=Page.ResolveUrl("~/")%>styles/master.css" />
+    <link rel="stylesheet" media="screen" href="<%=Page.ResolveUrl("~/")%>styles/uniform.css" />
+    <link rel="stylesheet" media="screen" href="<%=Page.ResolveUrl("~/")%>styles/Table.css" />
+    <link rel="stylesheet" media="screen" href="<%=Page.ResolveUrl("~/")%>styles/apprise.css" />
+    <link rel="stylesheet" media="print" href="<%=Page.ResolveUrl("~/")%>styles/Print.css" />
+    <asp:ContentPlaceHolder ID="Header" runat="server" />
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager" runat="server" AsyncPostBackTimeout="3600">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery.min.js" />
+            <asp:ScriptReference Path="~/Scripts/jquery.uniform.js" />
+            <asp:ScriptReference Path="~/Scripts/apprise-1.5.full.js" />
+            <asp:ScriptReference Path="~/Scripts/master.js" />
+            <asp:ScriptReference Path="~/Scripts/PrintPreview.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div id="preloader">
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="system">
+            </div>
+            <div class="showname">
+                <ul><a><asp:Label ID="userFirstname" runat="server" /><img src="<%=Page.ResolveUrl("~/")%>Images/Header/iconArrow.png"></a>
+                    <li><a href="<%=Page.ResolveUrl("~/")%>SignOut.aspx">ออกจากระบบ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="logo">
+        </div>
+        <div id="usermenu">
+            <div class="imgLeft">
+            </div>
+            <div class="imgCenter">
+                <uc:MenuControl runat="server" ID="ucMenuControl" />
+            </div>
+            <div class="imgRight">
+            </div>
+        </div>
+        <div class="contain">
+            <div class="round_top">
+            </div>
+            <div class="round_middle">
+                <asp:ContentPlaceHolder ID="Content" runat="server" />
+            </div>
+            <div class="round_under">
+            </div>
+        </div>
+        <div class="contain">
+            <div class="round_top">
+            </div>
+            <div class="round_footer">
+                <div class="copyright">
+                </div>
+                <div class="contact">
+                </div>
+            </div>
+            <div class="round_under" style="padding-bottom: 20px; margin-top: -5px;">
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

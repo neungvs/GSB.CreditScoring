@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRptGSBPFB0004" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRptGSBPFB0004" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsRptGSBPFB0004" msprop:Generator_UserDSName="dsRptGSBPFB0004">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RPT_Delinquency" msprop:Generator_TableClassName="RPT_DelinquencyDataTable" msprop:Generator_TableVarName="tableRPT_Delinquency" msprop:Generator_RowChangedName="RPT_DelinquencyRowChanged" msprop:Generator_TablePropName="RPT_Delinquency" msprop:Generator_RowDeletingName="RPT_DelinquencyRowDeleting" msprop:Generator_RowChangingName="RPT_DelinquencyRowChanging" msprop:Generator_RowEvHandlerName="RPT_DelinquencyRowChangeEventHandler" msprop:Generator_RowDeletedName="RPT_DelinquencyRowDeleted" msprop:Generator_RowClassName="RPT_DelinquencyRow" msprop:Generator_UserTableName="RPT_Delinquency" msprop:Generator_RowEvArgName="RPT_DelinquencyRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" type="xs:string" minOccurs="0" />
+              <xs:element name="apptacc" msprop:Generator_ColumnVarNameInTable="columnapptacc" msprop:Generator_ColumnPropNameInRow="apptacc" msprop:Generator_ColumnPropNameInTable="apptaccColumn" msprop:Generator_UserColumnName="apptacc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="atvacpt" msprop:Generator_ColumnVarNameInTable="columnatvacpt" msprop:Generator_ColumnPropNameInRow="atvacpt" msprop:Generator_ColumnPropNameInTable="atvacptColumn" msprop:Generator_UserColumnName="atvacpt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BM1" msprop:Generator_ColumnVarNameInTable="columnBM1" msprop:Generator_ColumnPropNameInRow="BM1" msprop:Generator_ColumnPropNameInTable="BM1Column" msprop:Generator_UserColumnName="BM1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BM2" msprop:Generator_ColumnVarNameInTable="columnBM2" msprop:Generator_ColumnPropNameInRow="BM2" msprop:Generator_ColumnPropNameInTable="BM2Column" msprop:Generator_UserColumnName="BM2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BM3" msprop:Generator_ColumnVarNameInTable="columnBM3" msprop:Generator_ColumnPropNameInRow="BM3" msprop:Generator_ColumnPropNameInTable="BM3Column" msprop:Generator_UserColumnName="BM3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ApproveAccounts" msprop:Generator_ColumnVarNameInTable="columnApproveAccounts" msprop:Generator_ColumnPropNameInRow="ApproveAccounts" msprop:Generator_ColumnPropNameInTable="ApproveAccountsColumn" msprop:Generator_UserColumnName="ApproveAccounts" type="xs:string" minOccurs="0" />
+              <xs:element name="ActiveAccounts" msprop:Generator_ColumnVarNameInTable="columnActiveAccounts" msprop:Generator_ColumnPropNameInRow="ActiveAccounts" msprop:Generator_ColumnPropNameInTable="ActiveAccountsColumn" msprop:Generator_UserColumnName="ActiveAccounts" type="xs:string" minOccurs="0" />
+              <xs:element name="B1_Flag_Y" msprop:Generator_ColumnVarNameInTable="columnB1_Flag_Y" msprop:Generator_ColumnPropNameInRow="B1_Flag_Y" msprop:Generator_ColumnPropNameInTable="B1_Flag_YColumn" msprop:Generator_UserColumnName="B1_Flag_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="B2_Flag_Y" msprop:Generator_ColumnVarNameInTable="columnB2_Flag_Y" msprop:Generator_ColumnPropNameInRow="B2_Flag_Y" msprop:Generator_ColumnPropNameInTable="B2_Flag_YColumn" msprop:Generator_UserColumnName="B2_Flag_Y" type="xs:string" minOccurs="0" />
+              <xs:element name="B3_Flag_Y" msprop:Generator_ColumnVarNameInTable="columnB3_Flag_Y" msprop:Generator_ColumnPropNameInRow="B3_Flag_Y" msprop:Generator_ColumnPropNameInTable="B3_Flag_YColumn" msprop:Generator_UserColumnName="B3_Flag_Y" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

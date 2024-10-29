@@ -1,0 +1,488 @@
+﻿*
+{
+    padding: 0;
+    margin: 0;
+}
+img
+{
+    border: 0;
+}
+a
+{
+    text-decoration: none;
+}
+html, body
+{
+    height: 100%;
+    overflow: inherit;
+}
+
+body
+{
+    /*font-family: "Sarabun"; 	font-size: 21px;*/
+    color: #d32d8e;
+    font: normal 12px/140% "Helvetica Neue" ,Helvetica,Verdana,Arial,sans-serif;
+    background: #fcf6fa url(../Images/Body/bg-Global.jpg) repeat-x;
+}
+
+#wrapper, .wrapper
+{
+    width: 970px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.header
+{
+    background: url(../Images/Header/header.png) repeat-x;
+    height: 43px;
+    width: 100%;
+}
+
+.system
+{
+    background: url(../Images/Header/system.png) no-repeat;
+    width: 163px;
+    height: 43px;
+    float: left;
+}
+
+#preloader
+{
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: #fff url(../images/ajax-loader.gif) no-repeat center center;
+    visibility: visible;
+}
+
+/* ======  HEADER ====== */
+
+.logo
+{
+    background: url(../Images/Header/logo.png) no-repeat;
+    width: 425px;
+    height: 58px;
+    margin-top: 11px;
+}
+
+/* ======  NAVIGATION BAR ====== */
+.navbar
+{
+    background-image: url(../images/navigation.png);
+    width: 950px;
+    height: 26px;
+    position: relative;
+}
+
+.navbar > ul
+{
+    margin: 0;
+    padding-left: 47px;
+    list-style: none;
+    position: relative;
+    padding-top: 1px;
+}
+
+.navbar > ul > li
+{
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.navbar > ul > li > a
+{
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.navbar > ul > li > img
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -2px;
+}
+
+/* ======  SECTION ====== */
+.showname
+{
+    float: right;
+}
+.showname ul
+{
+    list-style: none;
+    cursor: hand;
+    cursor: pointer;
+}
+.showname ul:hover
+{
+    background: url(../Images/Header/header_hover.png) repeat-x;
+    float: right;
+}
+
+.showname ul li
+{
+    display: none;
+}
+.showname ul:hover li
+{
+    display: block;
+}
+
+.showname ul a
+{
+    color: #fff;
+    font: bold 13px sans-serif;
+    padding-left: 10px;
+    padding-right: 8px;
+    line-height: 43px;
+}
+
+.showname ul a img
+{
+    margin-left: 7px;
+    border: 0px;
+}
+
+.showname ul:hover li
+{
+    border-left: 1px solid #eccde2;
+    border-right: 1px solid #eccde2;
+    border-bottom: 1px solid #eccde2;
+    background-color: #f9f0f5;
+    text-align: right;
+}
+
+.showname ul:hover li a
+{
+    color: #d32d8e;
+    font: bold 13px sans-serif;
+    line-height: 36px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.showname ul:hover li:hover
+{
+    background: url(../Images/Menu/MenuHover.png) repeat-x;
+}
+
+#usermenu .imgLeft
+{
+    background: url(../Images/Menu/MenuLeft.png) repeat-x;
+    width: 10px;
+    height: 36px;
+    float: left;
+}
+#usermenu .imgCenter
+{
+    background: url(../Images/Menu/MenuCenter.png) repeat-x;
+    width: 950px;
+    height: 36px;
+    float: left;
+    padding-top: 2px;
+}
+#usermenu .imgRight
+{
+    background: url(../Images/Menu/MenuRight.png) repeat-x;
+    width: 10px;
+    height: 36px;
+    float: right;
+}
+
+#usermenu ul ul
+{
+    z-index: 3;
+}
+#usermenu ul ul ul
+{
+    z-index: 4;
+}
+#usermenu ul ul ul ul
+{
+    z-index: 5;
+}
+
+#usermenu ul li:hover ul ul, #usermenu ul li:hover ul ul ul, #usermenu ul li:hover ul ul ul ul, #usermenu ul li.iehover ul ul, #usermenu ul li.iehover ul ul ul, #usermenu ul li.iehover ul ul ul ul
+{
+    display: none;
+}
+#usermenu ul li:hover ul, #usermenu ul ul li:hover ul, #usermenu ul ul ul li:hover ul, #usermenu ul ul ul ul li:hover ul, #usermenu ul li.iehover ul, #usermenu ul ul li.iehover ul, #usermenu ul ul ul li.iehover ul, #usermenu ul ul ul ul li.iehover ul
+{
+    display: block;
+}
+
+#usermenu
+{
+    height: 34px;
+    margin-top: 10px;
+    position: relative;
+}
+#usermenu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin-top: 0px;
+}
+#usermenu ul li
+{
+    position: relative;
+}
+#usermenu ul ul
+{
+    list-style: none;
+    display: none;
+    position: absolute;
+}
+#usermenu ul li img
+{
+    border: 0px;
+    padding-left: 4px;
+}
+#usermenu ul ul li img
+{
+    border: 0px;
+    padding-left: 15px;
+}
+#usermenu ul ul ul, #usermenu ul ul ul ul, #usermenu ul ul ul ul ul, #usermenu ul ul ul ul ul ul
+{
+    top: 0;
+    left: 100%;
+}
+#usermenu ul ul ul.slide_left, #usermenu ul ul ul ul.slide_left, #usermenu ul ul ul ul ul.slide_left
+{
+    top: 0;
+    left: auto;
+    right: 100%;
+}
+#usermenu ul ul li
+{
+    width: 100%;
+    display: block;
+    background-color: #f9f0f5;
+    border-left: 1px solid #eccde2;
+    border-right: 1px solid #eccde2;
+    border-bottom: 1px solid #eccde2;
+}
+#usermenu ul ul ul li
+{
+    margin-top: -1px;
+    margin-bottom: 1px;
+}
+#usermenu ul a
+{
+    color: #d32d8e;
+    padding-left: 13px;
+    padding-right: 12px;
+    display: block;
+    font: bold 12px sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 34px;
+}
+
+#usermenu ul ul a
+{
+    padding-top: 2px;
+}
+
+/* Root Menu */
+.send_right
+{
+    float: right !important;
+}
+.send_left
+{
+    float: left !important;
+}
+.first_menu
+{
+    border-top: 1px solid #eccde2;
+}
+.send_right ul
+{
+    right: 2px;
+}
+
+#usermenu ul a, #usermenu ul a, #usermenu ul, #usermenu ul
+{
+    cursor: pointer;
+    cursor: hand;
+}
+#usermenu ul li:hover > a
+{
+    background-image: url(../Images/Menu/MenuHover.png);
+}
+
+/* ======  FOOTER ====== */
+.contain
+{
+    margin-top: 10px;
+}
+
+.round_top
+{
+    background: url(../Images/Body/top.png) repeat-x;
+    width: 970px;
+    height: 10px;
+}
+
+.round_middle
+{
+    background: url(../Images/Body/middle.png) repeat-y;
+    width: 970px;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.round_under
+{
+    background: url(../Images/Body/bottom.png) repeat-x;
+    width: 970px;
+    height: 10px;
+}
+
+/* Footer */
+.round_footer
+{
+    background: url(../Images/Body/middle.png) repeat-y;
+    width: 970px;
+    height: 20px;
+    margin-top: -4px;
+}
+.copyright
+{
+    background: url(../Images/Footer/copyright.png) no-repeat;
+    width: 364px;
+    height: 19px;
+    margin-left: 10px;
+    float: left;
+}
+
+.contact
+{
+    background: url(../Images/Footer/contact.png) no-repeat;
+    width: 210px;
+    height: 19px;
+    float: right;
+    margin-right: 10px;
+}
+
+/* FiledSet */
+fieldset
+{
+    padding: 1em;
+}
+
+.btnSpace
+{
+    float: left;
+    padding-right: 10px;
+}
+
+.txtMargHeight
+{
+    margin-top: 3px;
+}
+
+
+
+/* Table Search */
+.application .sub-row-search-name
+{
+    width: 25%;
+    height: 34px;
+    padding-left: 40px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.application .sub-row-search-control
+{
+    width: 75%;
+    padding-left: 12px;
+    background-color: #fff;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.application .sub-row-search-button
+{
+    height: 40px;
+    padding-left: 248px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.application .export-left-box
+{
+    width: 40%;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.application .export-center-box
+{
+    width: 20%;
+    height: 34px;
+    background-color: #f8f8f8;
+    border-left: 1px solid #CCC;
+    text-align: center;
+}
+
+.application .export-right-box
+{
+    width: 40%;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.application .export-search-button
+{
+    height: 40px;
+    padding-left: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 300px;
+}
+
+/* User Group */
+.imgGroupAdd
+{
+    padding-top: 5px;
+}
+
+.imgGroupDelete
+{
+    padding-top: 5px;
+    padding-left: 1px;
+}

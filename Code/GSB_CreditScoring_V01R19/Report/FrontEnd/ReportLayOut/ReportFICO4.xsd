@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportFICO4" targetNamespace="http://tempuri.org/ReportFICO4.xsd" xmlns:mstns="http://tempuri.org/ReportFICO4.xsd" xmlns="http://tempuri.org/ReportFICO4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportFICO4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportFICO4" msprop:Generator_UserDSName="ReportFICO4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptFICO4" msprop:Generator_TableClassName="dtRptFICO4DataTable" msprop:Generator_TableVarName="tabledtRptFICO4" msprop:Generator_RowChangedName="dtRptFICO4RowChanged" msprop:Generator_TablePropName="dtRptFICO4" msprop:Generator_RowDeletingName="dtRptFICO4RowDeleting" msprop:Generator_RowChangingName="dtRptFICO4RowChanging" msprop:Generator_RowEvHandlerName="dtRptFICO4RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptFICO4RowDeleted" msprop:Generator_RowClassName="dtRptFICO4Row" msprop:Generator_UserTableName="dtRptFICO4" msprop:Generator_RowEvArgName="dtRptFICO4RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" msprop:Generator_UserColumnName="SortID" type="xs:string" minOccurs="0" />
+              <xs:element name="ScaledScoreRange" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ScaledScoreRange" msprop:Generator_ColumnVarNameInTable="columnScaledScoreRange" msprop:Generator_ColumnPropNameInTable="ScaledScoreRangeColumn" msprop:Generator_UserColumnName="ScaledScoreRange" type="xs:string" minOccurs="0" />
+              <xs:element name="DevBadsAscCount" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevBadsAscCount" msprop:Generator_ColumnVarNameInTable="columnDevBadsAscCount" msprop:Generator_ColumnPropNameInTable="DevBadsAscCountColumn" msprop:Generator_UserColumnName="DevBadsAscCount" type="xs:string" minOccurs="0" />
+              <xs:element name="DevGoodsAscCount" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevGoodsAscCount" msprop:Generator_ColumnVarNameInTable="columnDevGoodsAscCount" msprop:Generator_ColumnPropNameInTable="DevGoodsAscCountColumn" msprop:Generator_UserColumnName="DevGoodsAscCount" type="xs:string" minOccurs="0" />
+              <xs:element name="DevTotalAscCount" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevTotalAscCount" msprop:Generator_ColumnVarNameInTable="columnDevTotalAscCount" msprop:Generator_ColumnPropNameInTable="DevTotalAscCountColumn" msprop:Generator_UserColumnName="DevTotalAscCount" type="xs:string" minOccurs="0" />
+              <xs:element name="DevGoods" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevGoods" msprop:Generator_ColumnVarNameInTable="columnDevGoods" msprop:Generator_ColumnPropNameInTable="DevGoodsColumn" msprop:Generator_UserColumnName="DevGoods" type="xs:string" minOccurs="0" />
+              <xs:element name="DevBads" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevBads" msprop:Generator_ColumnVarNameInTable="columnDevBads" msprop:Generator_ColumnPropNameInTable="DevBadsColumn" msprop:Generator_UserColumnName="DevBads" type="xs:string" minOccurs="0" />
+              <xs:element name="DevTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevTotal" msprop:Generator_ColumnVarNameInTable="columnDevTotal" msprop:Generator_ColumnPropNameInTable="DevTotalColumn" msprop:Generator_UserColumnName="DevTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="DevPercentTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevPercentTotal" msprop:Generator_ColumnVarNameInTable="columnDevPercentTotal" msprop:Generator_ColumnPropNameInTable="DevPercentTotalColumn" msprop:Generator_UserColumnName="DevPercentTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="DevPBad" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevPBad" msprop:Generator_ColumnVarNameInTable="columnDevPBad" msprop:Generator_ColumnPropNameInTable="DevPBadColumn" msprop:Generator_UserColumnName="DevPBad" type="xs:string" minOccurs="0" />
+              <xs:element name="DevAccumPBad" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevAccumPBad" msprop:Generator_ColumnVarNameInTable="columnDevAccumPBad" msprop:Generator_ColumnPropNameInTable="DevAccumPBadColumn" msprop:Generator_UserColumnName="DevAccumPBad" type="xs:string" minOccurs="0" />
+              <xs:element name="DevOdds" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="DevOdds" msprop:Generator_ColumnVarNameInTable="columnDevOdds" msprop:Generator_ColumnPropNameInTable="DevOddsColumn" msprop:Generator_UserColumnName="DevOdds" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodGoods" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodGoods" msprop:Generator_ColumnVarNameInTable="columnPeriodGoods" msprop:Generator_ColumnPropNameInTable="PeriodGoodsColumn" msprop:Generator_UserColumnName="PeriodGoods" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodBads" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodBads" msprop:Generator_ColumnVarNameInTable="columnPeriodBads" msprop:Generator_ColumnPropNameInTable="PeriodBadsColumn" msprop:Generator_UserColumnName="PeriodBads" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodTotal" msprop:Generator_ColumnVarNameInTable="columnPeriodTotal" msprop:Generator_ColumnPropNameInTable="PeriodTotalColumn" msprop:Generator_UserColumnName="PeriodTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodPercentTotal" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodPercentTotal" msprop:Generator_ColumnVarNameInTable="columnPeriodPercentTotal" msprop:Generator_ColumnPropNameInTable="PeriodPercentTotalColumn" msprop:Generator_UserColumnName="PeriodPercentTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodPBad" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodPBad" msprop:Generator_ColumnVarNameInTable="columnPeriodPBad" msprop:Generator_ColumnPropNameInTable="PeriodPBadColumn" msprop:Generator_UserColumnName="PeriodPBad" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodAccumPBad" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodAccumPBad" msprop:Generator_ColumnVarNameInTable="columnPeriodAccumPBad" msprop:Generator_ColumnPropNameInTable="PeriodAccumPBadColumn" msprop:Generator_UserColumnName="PeriodAccumPBad" type="xs:string" minOccurs="0" />
+              <xs:element name="PeriodOdds" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="PeriodOdds" msprop:Generator_ColumnVarNameInTable="columnPeriodOdds" msprop:Generator_ColumnPropNameInTable="PeriodOddsColumn" msprop:Generator_UserColumnName="PeriodOdds" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

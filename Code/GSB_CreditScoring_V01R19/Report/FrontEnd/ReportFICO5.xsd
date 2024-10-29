@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportFICO5" targetNamespace="http://tempuri.org/ReportFICO5.xsd" xmlns:mstns="http://tempuri.org/ReportFICO5.xsd" xmlns="http://tempuri.org/ReportFICO5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportFICO5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ReportFICO5" msprop:Generator_UserDSName="ReportFICO5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRptFICO5" msprop:Generator_TableClassName="dtRptFICO5DataTable" msprop:Generator_TableVarName="tabledtRptFICO5" msprop:Generator_RowChangedName="dtRptFICO5RowChanged" msprop:Generator_TablePropName="dtRptFICO5" msprop:Generator_RowDeletingName="dtRptFICO5RowDeleting" msprop:Generator_RowChangingName="dtRptFICO5RowChanging" msprop:Generator_RowEvHandlerName="dtRptFICO5RowChangeEventHandler" msprop:Generator_RowDeletedName="dtRptFICO5RowDeleted" msprop:Generator_RowClassName="dtRptFICO5Row" msprop:Generator_UserTableName="dtRptFICO5" msprop:Generator_RowEvArgName="dtRptFICO5RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SortID" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="SortID" msprop:Generator_ColumnVarNameInTable="columnSortID" msprop:Generator_ColumnPropNameInTable="SortIDColumn" msprop:Generator_UserColumnName="SortID" type="xs:string" minOccurs="0" />
+              <xs:element name="ScaledScoreRange" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="ScaledScoreRange" msprop:Generator_ColumnVarNameInTable="columnScaledScoreRange" msprop:Generator_ColumnPropNameInTable="ScaledScoreRangeColumn" msprop:Generator_UserColumnName="ScaledScoreRange" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason81" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason81" msprop:Generator_ColumnVarNameInTable="columnReason81" msprop:Generator_ColumnPropNameInTable="Reason81Column" msprop:Generator_UserColumnName="Reason81" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason82" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason82" msprop:Generator_ColumnVarNameInTable="columnReason82" msprop:Generator_ColumnPropNameInTable="Reason82Column" msprop:Generator_UserColumnName="Reason82" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason83" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason83" msprop:Generator_ColumnVarNameInTable="columnReason83" msprop:Generator_ColumnPropNameInTable="Reason83Column" msprop:Generator_UserColumnName="Reason83" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason84" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason84" msprop:Generator_ColumnVarNameInTable="columnReason84" msprop:Generator_ColumnPropNameInTable="Reason84Column" msprop:Generator_UserColumnName="Reason84" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason85" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason85" msprop:Generator_ColumnVarNameInTable="columnReason85" msprop:Generator_ColumnPropNameInTable="Reason85Column" msprop:Generator_UserColumnName="Reason85" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason86" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason86" msprop:Generator_ColumnVarNameInTable="columnReason86" msprop:Generator_ColumnPropNameInTable="Reason86Column" msprop:Generator_UserColumnName="Reason86" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason87" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason87" msprop:Generator_ColumnVarNameInTable="columnReason87" msprop:Generator_ColumnPropNameInTable="Reason87Column" msprop:Generator_UserColumnName="Reason87" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason88" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason88" msprop:Generator_ColumnVarNameInTable="columnReason88" msprop:Generator_ColumnPropNameInTable="Reason88Column" msprop:Generator_UserColumnName="Reason88" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason89" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason89" msprop:Generator_ColumnVarNameInTable="columnReason89" msprop:Generator_ColumnPropNameInTable="Reason89Column" msprop:Generator_UserColumnName="Reason89" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason90" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason90" msprop:Generator_ColumnVarNameInTable="columnReason90" msprop:Generator_ColumnPropNameInTable="Reason90Column" msprop:Generator_UserColumnName="Reason90" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason21" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason21" msprop:Generator_ColumnVarNameInTable="columnReason21" msprop:Generator_ColumnPropNameInTable="Reason21Column" msprop:Generator_UserColumnName="Reason21" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason22" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason22" msprop:Generator_ColumnVarNameInTable="columnReason22" msprop:Generator_ColumnPropNameInTable="Reason22Column" msprop:Generator_UserColumnName="Reason22" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason23" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason23" msprop:Generator_ColumnVarNameInTable="columnReason23" msprop:Generator_ColumnPropNameInTable="Reason23Column" msprop:Generator_UserColumnName="Reason23" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason24" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason24" msprop:Generator_ColumnVarNameInTable="columnReason24" msprop:Generator_ColumnPropNameInTable="Reason24Column" msprop:Generator_UserColumnName="Reason24" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason25" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason25" msprop:Generator_ColumnVarNameInTable="columnReason25" msprop:Generator_ColumnPropNameInTable="Reason25Column" msprop:Generator_UserColumnName="Reason25" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason26" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason26" msprop:Generator_ColumnVarNameInTable="columnReason26" msprop:Generator_ColumnPropNameInTable="Reason26Column" msprop:Generator_UserColumnName="Reason26" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason27" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason27" msprop:Generator_ColumnVarNameInTable="columnReason27" msprop:Generator_ColumnPropNameInTable="Reason27Column" msprop:Generator_UserColumnName="Reason27" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason28" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason28" msprop:Generator_ColumnVarNameInTable="columnReason28" msprop:Generator_ColumnPropNameInTable="Reason28Column" msprop:Generator_UserColumnName="Reason28" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason29" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason29" msprop:Generator_ColumnVarNameInTable="columnReason29" msprop:Generator_ColumnPropNameInTable="Reason29Column" msprop:Generator_UserColumnName="Reason29" type="xs:string" minOccurs="0" />
+              <xs:element name="Reason30" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="Reason30" msprop:Generator_ColumnVarNameInTable="columnReason30" msprop:Generator_ColumnPropNameInTable="Reason30Column" msprop:Generator_UserColumnName="Reason30" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
